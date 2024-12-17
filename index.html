@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagda - Explore the City</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Dagda, Latvia</h1>
+        <p>Explore the beauty, history, and attractions of Dagda!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#history">History</a>
+        <a href="#map">Map</a>
+        <a href="#weather">Weather</a>
+        <a href="#things-to-do">Things to Do</a>
+        <a href="#transport">Transport</a>
+        <a href="#hotels">Hotels</a>
+        <a href="#events">Events</a>
+    </nav>
+
+    <!-- History Section -->
+    <section id="history">
+        <h2>History of Dagda</h2>
+        <p>Dagda is a town in Krāslava municipality in Latgale, Latvia . It is located on the eastern slope of the Latgalian Uplands , by Lake Dagda and the Narūta River, 36 km northeast of Krāslava , 267 km from Riga . It was the center of the former Dagda district (1950-1962) and Dagda municipality (2009-2021).Dagda manor and a village of small traders and craftsmen are mentioned in historical sources during the existence of the Inflant Voivodeship in the 17th century. In 1705, the Viļaka starast Juris Hilzens built the Dagda Catholic Church, in 1741, the father of the writer Jozef Hilzens Jans Augusts Hilzens (1702-1767) built the current Dagda Holy Trinity Church . From 1742 to 1820, a Jesuit mission operated in Dagda</p>
+        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSVv_qf-IlyFRE2A8PUyHF1NALOFXs9OGWC2-8XZsSElr4JCBkjJmj8jdul-bBF-4T71iqvrByDDORGYX2WCV_TngpTiLBA_l_FNe16WQ" alt="Dagda Street">
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+        <h2>Map of Dagda</h2>
+        <iframe 
+            src="https://maps.google.com/maps?q=Dagda,%20Latvia&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="400" 
+            style="border:0;">
+        </iframe>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather" class="weather">
+        <h2>Current Weather in Dagda</h2>
+        <p id="weatherDisplay">Loading...</p>
+        <button onclick="showWeather()">Show Weather</button>
+    </section>
+
+    <!-- Things to Do Section -->
+    <section id="things-to-do">
+        <h2>Things to Do</h2>
+        <ul>
+            <li>Visit the historic Dagda Church</li>
+            <li>Explore the local markets</li>
+            <li>Hike through scenic trails</li>
+        </ul>
+    </section>
+
+    <!-- Public Transport -->
+    <section id="transport">
+        <h2>Public Transport</h2>
+        <p>Buses and taxis are the main forms of public transportation in Dagda. For schedules, visit the <a href="https://www.autoosta.lv" target="_blank">Latvian Bus Network</a>.</p>
+    </section>
+
+    <!-- Hotel Booking -->
+    <section id="hotels">
+        <h2>Book a Hotel</h2>
+        <p>Find accommodations for your trip to Dagda:</p>
+        <a href="https://www.booking.com" target="_blank">Book a Hotel Here</a>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>Check back for updates on festivals and events in Dagda.</p>
+    </section>
+
+    <!-- Notice Board -->
+    <section class="notice-board">
+        <h2>Community Notice Board</h2>
+        <textarea id="noticeInput" placeholder="Write your message here..."></textarea>
+        <button onclick="postNotice()">Post Message</button>
+        <div id="noticeOutput"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Visit Dagda | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
